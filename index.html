@@ -6,6 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
@@ -13,105 +20,117 @@
 	</head>
 	<body class="page">
 		<header>
-			<a href="./index.html" class="logo-link">
-				Web
-				<span class="logo-first">Studio</span>
-			</a>
-			<nav>
-				<ul class="nav-list">
-					<li class="nav-item"><a href="./index.html" class="nav-link">Студія</a></li>
-					<li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
-					<li class="nav-item"><a href="./index.html" class="nav-link">Контакти</a></li>
+			<div class="container container-header">
+				<a href="./index.html" class="logo-link">
+					<span>Web</span>
+					<span class="logo-first">Studio</span>
+				</a>
+				<nav>
+					<ul class="nav-list">
+						<li class="nav-item"><a href="./index.html" class="nav-link">Студія</a></li>
+						<li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
+						<li class="nav-item"><a href="./index.html" class="nav-link">Контакти</a></li>
+					</ul>
+				</nav>
+				<ul class="contacts-list">
+					<li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
+					<li><a href="tel:+380961111111" class="contacts-link">+380961111111</a></li>
 				</ul>
-			</nav>
-			<ul class="contacts-list">
-				<li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-				<li><a href="tel:+380961111111" class="contacts-link">+380961111111</a></li>
-			</ul>
+			</div>
 		</header>
 		<main>
 			<section class="hero">
 				<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
 				<button type="button" class="hero-btn">Замовити послугу</button>
 			</section>
-			<section>
-				<h2 class="visually-hidden">Наша робота</h2>
-				<ul class="rules-list">
-					<li>
-						<h3 class="rules-title">Увага до деталей</h3>
-						<p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-					</li>
-					<li>
-						<h3 class="rules-title">Пунктуальність</h3>
-						<p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-					</li>
-					<li>
-						<h3 class="rules-title">Планування</h3>
-						<p>Так само консультація з широким активом значною мірою зумовлює.</p>
-					</li>
-					<li>
-						<h3 class="rules-title">Сучасні технології</h3>
-						<p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-					</li>
-				</ul>
-			</section>
+			<div class="container">
+				<section class="rules-sect">
+					<h2 class="visually-hidden">Наша робота</h2>
+					<ul class="rules-list">
+						<li>
+							<h3 class="rules-title">Увага до деталей</h3>
+							<p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+						</li>
+						<li>
+							<h3 class="rules-title">Пунктуальність</h3>
+							<p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+						</li>
+						<li>
+							<h3 class="rules-title">Планування</h3>
+							<p>Так само консультація з широким активом значною мірою зумовлює.</p>
+						</li>
+						<li>
+							<h3 class="rules-title">Сучасні технології</h3>
+							<p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+						</li>
+					</ul>
+				</section>
+			</div>
 
-			<section>
-				<h2 class="title">Чим ми займаємося</h2>
-				<ul class="work-list">
-					<li><img src="./images/box1.jpg" alt="Процесс кодинга с помощью разных девайсов" width="370" /></li>
-					<li><img src="./images/box2.jpg" alt="Использование телефона и ноутбука в работе" width="370" /></li>
-					<li><img src="./images/box3.jpg" alt="Иллюстрация дизайна на планшете" width="370" /></li>
-				</ul>
-			</section>
+			<div class="container">
+				<section class="work-section">
+					<h2 class="title">Чим ми займаємося</h2>
+					<ul class="work-list">
+						<li><img src="./images/box1.jpg" alt="Процесс кодинга с помощью разных девайсов" width="370" /></li>
+						<li><img src="./images/box2.jpg" alt="Использование телефона и ноутбука в работе" width="370" /></li>
+						<li><img src="./images/box3.jpg" alt="Иллюстрация дизайна на планшете" width="370" /></li>
+					</ul>
+				</section>
+			</div>
 			<section class="team-section">
-				<h2 class="title">Наша команда</h2>
-				<ul class="team-list">
-					<li>
-						<img src="./images/imagesteam/img1.jpg" alt="Участник команды мужчина в красной рубашке" width="270" />
-						<h3 class="team-title">Ігор Дем'яненко</h3>
-						<p class="team-text">Product Designer</p>
-					</li>
+				<div class="container">
+					<h2 class="title">Наша команда</h2>
+					<ul class="team-list">
+						<li>
+							<img src="./images/imagesteam/img1.jpg" alt="Участник команды мужчина в красной рубашке" width="270" />
+							<h3 class="team-title">Ігор Дем'яненко</h3>
+							<p class="team-text">Product Designer</p>
+						</li>
 
-					<li>
-						<img src="./images/imagesteam/img2.jpg" alt="Участник команды девушка в пиджаке" width="270" />
-						<h3 class="team-title">Ольга Рєпіна</h3>
-						<p class="team-text">Frontend Developer</p>
-					</li>
-					<li>
-						<img src="./images/imagesteam/img3.jpg" alt="Участник команды мужчина в синей рубашке" width="270" />
-						<h3 class="team-title">Микола Тарасов</h3>
-						<p class="team-text">Marketing</p>
-					</li>
-					<li>
-						<img src="./images/imagesteam/img4.jpg" alt="Участник команды мужчина в чёрной футболке" width="270" />
-						<h3 class="team-title">Михайло Єрмаков</h3>
-						<p class="team-text">UI Designer</p>
-					</li>
-				</ul>
+						<li>
+							<img src="./images/imagesteam/img2.jpg" alt="Участник команды девушка в пиджаке" width="270" />
+							<h3 class="team-title">Ольга Рєпіна</h3>
+							<p class="team-text">Frontend Developer</p>
+						</li>
+						<li>
+							<img src="./images/imagesteam/img3.jpg" alt="Участник команды мужчина в синей рубашке" width="270" />
+							<h3 class="team-title">Микола Тарасов</h3>
+							<p class="team-text">Marketing</p>
+						</li>
+						<li>
+							<img src="./images/imagesteam/img4.jpg" alt="Участник команды мужчина в чёрной футболке" width="270" />
+							<h3 class="team-title">Михайло Єрмаков</h3>
+							<p class="team-text">UI Designer</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 		</main>
 		<footer class="footer">
-			<a href="./index.html" class="logo-link">
-				Web
-				<span class="logo-second">Studio</span>
-			</a>
-			<address>
-				<ul class="contacts-list">
-					<li>
-						<a
-							href="https://goo.gl/maps/oQ1zAfRvta3EiJCr7"
-							target="_blank"
-							rel="noopener, nofollow"
-							class="address-item"
-						>
-							м. Київ, пр-т Лесі Українки, 26
-						</a>
-					</li>
-					<li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-					<li><a href="tel:+380961111111" class="contacts-link">+380961111111</a></li>
-				</ul>
-			</address>
+			<div class="container">
+				<a href="./index.html" class="logo-link">
+					Web
+					<span class="logo-second">Studio</span>
+				</a>
+				<address>
+					<ul class="address-list">
+						<li class="address-item">
+							<a
+								href="https://goo.gl/maps/oQ1zAfRvta3EiJCr7"
+								target="_blank"
+								rel="noopener, nofollow"
+								class="address-link"
+							>
+								м. Київ, пр-т Лесі Українки, 26
+							</a>
+						</li>
+						<li class="address-item">
+							<a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
+						</li>
+						<li class="address-item"><a href="tel:+380961111111" class="contacts-link">+380961111111</a></li>
+					</ul>
+				</address>
+			</div>
 		</footer>
 	</body>
 </html>
