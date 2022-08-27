@@ -172,6 +172,7 @@ ul {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--main-color);
+	margin-bottom: 10px;
 }
 
 .rules-list {
