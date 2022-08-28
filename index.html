@@ -19,14 +19,14 @@
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 
-	<body class="page">
+	<body>
 		<header>
 			<div class="container container-header">
 				<a href="./index.html" class="logo-link">
 					Web
 					<span class="logo-first">Studio</span>
 				</a>
-				<nav>
+				<nav class="nav-sect">
 					<ul class="nav-list">
 						<li class="nav-item"><a href="./index.html" class="nav-link">Студія</a></li>
 						<li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
@@ -44,8 +44,8 @@
 				<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
 				<button type="button" class="hero-btn">Замовити послугу</button>
 			</section>
-			<div class="container">
-				<section class="rules-sect">
+			<section class="rules-sect">
+				<div class="container">
 					<h2 class="visually-hidden">Наша робота</h2>
 					<ul class="rules-list">
 						<li>
@@ -65,8 +65,8 @@
 							<p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
 						</li>
 					</ul>
-				</section>
-			</div>
+				</div>
+			</section>
 
 			<div class="container">
 				<section class="work-section">
@@ -82,26 +82,34 @@
 				<div class="container">
 					<h2 class="title">Наша команда</h2>
 					<ul class="team-list">
-						<li>
+						<li class="team-item">
 							<img src="./images/imagesteam/img1.jpg" alt="Участник команды мужчина в красной рубашке" width="270" />
-							<h3 class="team-title">Ігор Дем'яненко</h3>
-							<p class="team-text">Product Designer</p>
+							<div class="team-block">
+								<h3 class="team-title">Ігор Дем'яненко</h3>
+								<p class="team-text">Product Designer</p>
+							</div>
 						</li>
 
-						<li>
+						<li class="team-item">
 							<img src="./images/imagesteam/img2.jpg" alt="Участник команды девушка в пиджаке" width="270" />
-							<h3 class="team-title">Ольга Рєпіна</h3>
-							<p class="team-text">Frontend Developer</p>
+							<div class="team-block">
+								<h3 class="team-title">Ольга Рєпіна</h3>
+								<p class="team-text">Frontend Developer</p>
+							</div>
 						</li>
-						<li>
+						<li class="team-item">
 							<img src="./images/imagesteam/img3.jpg" alt="Участник команды мужчина в синей рубашке" width="270" />
-							<h3 class="team-title">Микола Тарасов</h3>
-							<p class="team-text">Marketing</p>
+							<div class="team-block">
+								<h3 class="team-title">Микола Тарасов</h3>
+								<p class="team-text">Marketing</p>
+							</div>
 						</li>
-						<li>
+						<li class="team-item">
 							<img src="./images/imagesteam/img4.jpg" alt="Участник команды мужчина в чёрной футболке" width="270" />
-							<h3 class="team-title">Михайло Єрмаков</h3>
-							<p class="team-text">UI Designer</p>
+							<div class="team-block">
+								<h3 class="team-title">Михайло Єрмаков</h3>
+								<p class="team-text">UI Designer</p>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -109,7 +117,7 @@
 		</main>
 		<footer class="footer">
 			<div class="container">
-				<a href="./index.html" class="logo-link">
+				<a href="./index.html" class="footer-logo">
 					Web
 					<span class="logo-second">Studio</span>
 				</a>

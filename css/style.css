@@ -5,7 +5,7 @@
 	--accent-color: #2196f3;
 }
 
-.page {
+body {
 	font-family: "Roboto";
 	font-size: 14px;
 	color: var(--second-color);
@@ -24,8 +24,7 @@ ul {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+	line-height: 1.7;
 }
 
 .container {
@@ -63,7 +62,6 @@ ul {
 	list-style: none;
 	display: flex;
 	gap: 50px;
-	margin-left: 93px;
 }
 
 .nav-link {
@@ -83,10 +81,14 @@ ul {
 	color: var(--accent-color);
 }
 
+.nav-sect {
+	margin-left: 93px;
+}
+
 .contacts-list {
 	list-style: none;
 	display: flex;
-	margin-left: 344px;
+	margin-left: auto;
 	gap: 50px;
 }
 
@@ -102,8 +104,7 @@ ul {
 
 .hero {
 	background-color: #2f303a;
-	height: 593px;
-	align-items: center;
+	padding: 200px 0;
 }
 
 .hero-title {
@@ -118,7 +119,6 @@ ul {
 	width: 696px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 200px;
 }
 
 .hero-btn .rules-list {
@@ -141,6 +141,7 @@ ul {
 	margin-top: 30px;
 	padding: 10px 32px;
 	border-radius: 4px;
+	border: none;
 }
 
 .hero-btn:hover,
@@ -151,6 +152,7 @@ ul {
 /* Наша работа, основные принципы */
 
 .rules-sect {
+	padding: 94px 0;
 }
 
 .visually-hidden {
@@ -173,18 +175,17 @@ ul {
 	text-transform: uppercase;
 	color: var(--main-color);
 	margin-bottom: 10px;
+	font-size: 14px;
 }
 
 .rules-list {
 	list-style: none;
 	display: flex;
 	gap: 30px;
-	margin-top: 101px;
 }
 /* Чем мы занимаемся */
 
 .work-section {
-	margin-top: 94px;
 }
 
 .title {
@@ -201,7 +202,6 @@ ul {
 	display: flex;
 	gap: 30px;
 	margin-top: 50px;
-	margin-bottom: 94px;
 }
 
 /* Наша команда */
@@ -213,13 +213,22 @@ ul {
 	gap: 30px;
 }
 
+.team-item {
+	background: #ffffff;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.team-block {
+	padding: 30px 0;
+}
+
 .team-title {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: calc(19 / 16);
 	text-align: center;
 	color: var(--main-color);
-	margin-top: 30px;
 }
 
 .team-text {
@@ -240,9 +249,18 @@ ul {
 	margin-top: 30px;
 }
 
+.address-item {
+	margin-bottom: 9px;
+}
+
+.address-item:last-child {
+	margin-bottom: 0px;
+}
+
 .address-link {
 	text-decoration: none;
 	color: var(--light-color);
+	line-height: 1.71;
 }
 
 .logo-second {
@@ -255,15 +273,29 @@ ul {
 	padding-bottom: 60px;
 }
 
+.footer-logo {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 26px;
+	line-height: calc(31 / 26);
+	color: var(--accent-color);
+	letter-spacing: 0.03em;
+	text-decoration: none;
+}
+
 address {
 	font-style: normal;
+	margin-top: 20px;
 }
 
 /* ПОРТФОЛИО СТИЛИ */
 
+.header-portfolio {
+	border-bottom: 1px solid #ececec;
+}
+
 .main-sect {
-	margin-top: 39px;
-	margin-bottom: 149px;
+	padding: 94px 0;
 }
 
 .nav-projects-list {
@@ -304,6 +336,13 @@ address {
 	width: 370px;
 	margin-right: 30px;
 	margin-bottom: 30px;
+}
+
+.projects-block {
+	padding: 20px 24px;
+	border-bottom: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
 }
 
 .projects-item:nth-child(3n) {
