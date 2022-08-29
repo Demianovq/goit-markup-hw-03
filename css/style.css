@@ -18,13 +18,14 @@ h3,
 h4,
 h5,
 h6,
-p,
-ul {
+p {
 	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	line-height: 1.7;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
 }
 
 .container {
@@ -72,6 +73,10 @@ ul {
 	text-decoration: none;
 	padding-top: 32px;
 	padding-bottom: 32px;
+}
+
+.current {
+	color: var(--accent-color);
 }
 
 .nav-link:focus,
@@ -186,6 +191,7 @@ ul {
 /* Чем мы занимаемся */
 
 .work-section {
+	padding-bottom: 94px;
 }
 
 .title {
@@ -202,6 +208,9 @@ ul {
 	display: flex;
 	gap: 30px;
 	margin-top: 50px;
+}
+.work-item {
+	width: 370px;
 }
 
 /* Наша команда */

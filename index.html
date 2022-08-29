@@ -12,10 +12,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 
@@ -28,7 +25,7 @@
 				</a>
 				<nav class="nav-sect">
 					<ul class="nav-list">
-						<li class="nav-item"><a href="./index.html" class="nav-link">Студія</a></li>
+						<li class="nav-item"><a href="./index.html" class="nav-link current">Студія</a></li>
 						<li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
 						<li class="nav-item"><a href="./index.html" class="nav-link">Контакти</a></li>
 					</ul>
@@ -41,8 +38,10 @@
 		</header>
 		<main>
 			<section class="hero">
-				<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-				<button type="button" class="hero-btn">Замовити послугу</button>
+				<div class="container">
+					<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+					<button type="button" class="hero-btn">Замовити послугу</button>
+				</div>
 			</section>
 			<section class="rules-sect">
 				<div class="container">
@@ -68,16 +67,17 @@
 				</div>
 			</section>
 
-			<div class="container">
-				<section class="work-section">
+			<section class="work-section">
+				<div class="container">
 					<h2 class="title">Чим ми займаємося</h2>
 					<ul class="work-list">
-						<li><img src="./images/box1.jpg" alt="Процесс кодинга с помощью разных девайсов" width="370" /></li>
-						<li><img src="./images/box2.jpg" alt="Использование телефона и ноутбука в работе" width="370" /></li>
-						<li><img src="./images/box3.jpg" alt="Иллюстрация дизайна на планшете" width="370" /></li>
+						<li class="work-item"><img src="./images/box1.jpg" alt="Процесс кодинга с помощью разных девайсов" width="370" /></li>
+						<li class="work-item"><img src="./images/box2.jpg" alt="Использование телефона и ноутбука в работе" width="370" /></li>
+						<li class="work-item"><img src="./images/box3.jpg" alt="Иллюстрация дизайна на планшете" width="370" /></li>
 					</ul>
-				</section>
-			</div>
+				</div>
+			</section>
+
 			<section class="team-section">
 				<div class="container">
 					<h2 class="title">Наша команда</h2>
@@ -124,12 +124,7 @@
 				<address>
 					<ul class="address-list">
 						<li class="address-item">
-							<a
-								href="https://goo.gl/maps/oQ1zAfRvta3EiJCr7"
-								target="_blank"
-								rel="noopener, nofollow"
-								class="address-link"
-							>
+							<a href="https://goo.gl/maps/oQ1zAfRvta3EiJCr7" target="_blank" rel="noopener, nofollow" class="address-link">
 								м. Київ, пр-т Лесі Українки, 26
 							</a>
 						</li>
